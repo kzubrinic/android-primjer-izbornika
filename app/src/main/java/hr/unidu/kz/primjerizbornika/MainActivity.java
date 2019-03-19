@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
+        // Obrada akcija izbornika opcija
         switch (item.getItemId()) {
             case R.id.prva_stavka:
                 obradaPrveStavkeGlavnogIzbornika();
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        // Handle item selection
+        // Obrada akcija kontekstualnog izbornika
         switch (item.getItemId()) {
             case R.id.m2_prva_stavka:
                 slikaProbudiSe();

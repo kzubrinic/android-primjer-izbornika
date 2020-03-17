@@ -1,6 +1,6 @@
 package hr.unidu.kz.primjerizbornika;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -32,11 +32,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Obrada akcija izbornika opcija
         switch (item.getItemId()) {
-            case R.id.prva_stavka:
-                obradaPrveStavkeGlavnogIzbornika();
+            case R.id.vanjski_izbor:
+                Toast.makeText(this,"Izabran je vanjski izbornik", Toast.LENGTH_LONG).show();
                 return true;
-            case R.id.druga_stavka:
-                obradaDrugeStavkeGlavnogIzbornika();
+            case R.id.prva_stavka:
+                Toast.makeText(this,"Izabrana je prva stavka glavnog izbornika", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.treca_stavka:
+                Toast.makeText(this,"Izabrana je stavka podizbornika", Toast.LENGTH_LONG).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -66,12 +69,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void obradaPrveStavkeGlavnogIzbornika(){
-        Toast.makeText(this,"Izabrana je prva stavka glavnog izbornika", Toast.LENGTH_LONG).show();
-    }
-    private void obradaDrugeStavkeGlavnogIzbornika(){
-        Toast.makeText(this,"Izabrana je druga stavka glavnog izbornika", Toast.LENGTH_LONG).show();
-    }
     private void slikaProbudiSe(){
         slika.setImageDrawable(getResources().getDrawable(R.drawable.smiley2));
     }

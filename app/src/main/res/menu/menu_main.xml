@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/vanjski_izbor"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="@string/i0_vanjski"
+        app:showAsAction="ifRoom"/>
     <item android:id="@+id/prva_stavka"
         android:title="@string/i1_prva_stavka" />
     <item android:id="@+id/druga_stavka"
-        android:title="@string/i1_druga_stavka_izbornika" />
+        android:title="@string/i1_druga_stavka_izbornika" >
+        <menu>
+            <item android:id="@+id/treca_stavka" app:showAsAction="never"
+                android:title="@string/i1_treca_stavka" />
+        </menu>
+    </item>
 </menu>

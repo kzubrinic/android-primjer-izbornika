@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Primjeri izbornika</string>
     <string name="i1_prva_stavka">Prva stavka izbornika</string>
-    <string name="i1_druga_stavka_izbornika">Druga stavka izbornika</string>
+    <string name="i1_druga_stavka_izbornika">Podizbornik</string>
     <string name="i2_prva_stavka">Probudi se</string>
     <string name="i2_druga_stavka_izbornika">Spavaj</string>
     <string name="smiley">Smiley</string>
+    <string name="i0_vanjski">Vanjska stavka izbornika</string>
+    <string name="i1_treca_stavka">Stavka podizbornika</string>
 </resources>
